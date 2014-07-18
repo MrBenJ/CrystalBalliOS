@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class PMCrystalBall;
+
 @interface PMViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UILabel *predictionLabel;
+
+@property (strong, nonatomic) PMCrystalBall *crystalBall;
 - (IBAction)buttonPressed;
-@property (weak, nonatomic) IBOutlet UILabel *predictionLabel;
 
 @end

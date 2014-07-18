@@ -7,7 +7,7 @@
 //
 
 #import "PMViewController.h"
-
+#import "PMCrystalBall.h"
 @interface PMViewController ()
 
 @end
@@ -17,8 +17,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    self.crystalBall = [[PMCrystalBall alloc] init];
 }
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -27,7 +29,9 @@
 }
 
 - (IBAction)buttonPressed {
-    self.predictionLabel.text = @"YES";
+    
+
+    self.predictionLabel.text = [self.crystalBall randomPrediction];
     
 }
 @end
