@@ -20,6 +20,6 @@
 @property (strong, nonatomic, readonly) NSArray *predictions;
 @property (strong, nonatomic) NSString *randomPrediction;
 
--(NSString*) randomPrediciton;
+-(NSString*) randomPrediction;
 
 @end

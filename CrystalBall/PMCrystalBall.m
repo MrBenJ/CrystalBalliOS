@@ -26,7 +26,7 @@
     }
     return _predictions;
 }
--(NSString*) randomPrediciton {
+-(NSString*) randomPredictiton {
     int random = arc4random_uniform(self.predictions.count);
     return [self.predictions objectAtIndex:random];
 }
